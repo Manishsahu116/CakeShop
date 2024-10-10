@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbeauty Cakes</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section start here  -->
+    <div id="navbar-placeholder"></div>
+    <!-- blogs section start here  -->
+    <br><br><br><br><br><br><br>
+    <section class="blogs" id="blogs">
+
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/Ceremel.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Caramel Cake </h3>
+                        <p>Indulge in Sweet Elegance: Our Caramel Cake is a delectable treat featuring layers of moist
+                            goodness and rich caramel sweetness.
+                            A delightful symphony for your taste buds!</p>
+                        <p>Experience pure bliss with our Caramel Cake – a heavenly blend of moist perfection and golden
+                            caramel allure.</p>
+                        <a href="#" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/blog-img1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Vanilla Cupcakes </h3>
+                        <p>Delight in Every Bite: Our Vanilla Cupcakes are a symphony of moist perfection and pure
+                            vanilla goodness.
+                            Indulge in these sweet treats, each bite a moment of pure joy!</p>
+                        <p>Savor the simple pleasures with our Vanilla Cupcakes – a perfect balance of light,
+                            fluffy texture and the timeless allure of vanilla flavor in every delightful cupcake.</p>
+                        <a href="#" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/cupcake2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Chocolate Cupcakes </h3>
+                        <p>Indulge in heavenly bliss with our Chocolate Cupcakes, a perfect fusion of moist, rich
+                            chocolate cake topped with velvety cocoa frosting.
+                            Each bite is a celebration of pure chocolate delight!</p>
+                        <p>Experience the irresistible magic of our Chocolate Cupcakes — a decadent treat that promises
+                            to satisfy your sweet cravings in every delightful, bite-sized package.</p>
+                        <a href="#" class="btn">learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+    </section>
+
+    <!-- blogs section ends here  -->
+    <!-- footer section start here  -->
+
+    <div id="footer-placeholder"></div>
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+
+    <script>
+        // Navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+
+</body>
+
+</html>

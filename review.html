@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbeauty Cakes</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section start here  -->
+    <div id="navbar-placeholder"></div>
+    <!-- header section end here  -->
+       <!-- review section start here  -->
+       <br><br><br><br><br><br><br>
+       <section class="review" id="review">
+        <div class="heading">
+            <h2>client review</h2>
+        </div>
+
+
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>"Cake was very very tasty in Nallasopara I can't believe Mbeauty cakes & chocolates thanks a lot Allah aur kaam me barkat de"</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client2.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Asiya Khan</h3>
+                            <p>Housewife</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>"Thank you so much Mr Manoj. After lock down also you the best job delivering cake on my special occasion. 
+                            It's was very delicious to eat and superb presentation of the cake."</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client2.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Dipti Singh</h3>
+                            <p>Accountant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>"Highly recommend, 
+                            the cake ordered was so tasty didn't expected the wow experience from nalasopara side but thiis people really changed my mind...❤"</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client2.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Fauzia Sayyed</h3>
+                            <p>Working Professional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>"The cake quality is always good
+                            They don't compromise on the quality at all i recommend everyone to order from mbeauty cakes I assure the taste and quality.....
+                            Everytime i order i always get a awesome taste....
+                            Thank mbeauty cakes"</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client1.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Prasad Khadaye</h3>
+                            <p>Doctor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <div id="footer-placeholder"></div>
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+    
+    <script>
+        // Navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
+        // Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+
+</body>
+
+</html>
